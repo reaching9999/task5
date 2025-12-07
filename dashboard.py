@@ -8,7 +8,7 @@ import pingouin as pg
 from fpdf import FPDF
 
 # url for the gsheet, pretty important stuff. easy to find up here
-G_SHEET_URL71 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRusoW61MhlMGJ686v_I2AQnxiqIwO87ichc_hyiZTRx08QwWhCM5uRJWCZpD1HEdgQ_noKet-_apHZ/pub?gid=0&single=true&output=csv"
+G_SHEET_URL71 = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSq8vervIKDmR0OLpampNd6BIay2_a3Lo0yBcVTRjrvpvVi61QKElSydzP_uk2-CXbNrznOmUenDqfn/pub?gid=0&single=true&output=csv"
 
 @st.cache_data(ttl=600) # Caching this thing for 10 mins, so we dont keep hitting the sheet
 def load_data71(url):
@@ -219,4 +219,5 @@ def main():
         st.warning("Could not load or process data. Please check the data source url.")
 
 if __name__ == "__main__":
+
     main()
